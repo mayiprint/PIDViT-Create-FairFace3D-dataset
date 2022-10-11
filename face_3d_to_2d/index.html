@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>3D Reconstruction from a Single Image</title>
+  <script src="three.min.js"></script>
+  <script src="OBJVertexColorLoader.js"></script>
+  <script src="OrbitControls.js"></script>
+  <script src="view.js"></script>
+  <style>
+    #viewer {
+      border: 1px solid #999999;
+    }
+    #viewer #viewer_frame {
+      float: left;
+      position: relative;
+    }
+    #progress {
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      height: 30px;
+      border: 1px solid #aaaaaa;
+      position: absolute;
+    }
+    #progress #progressin {
+      background-color: #f4aa42;
+      line-height: 30px;
+      padding-left: 10px;
+      font-size: 10pt;
+      height: 100%;
+    }
+  </style>
+  <script>
+    var objname;
+    objname = "59b1b7604515d";
+  </script>
+</head>
+<body>
+  <div id="viewer">
+    <div id="viewer_frame">
+      <div id="progress">
+        <div id="progressin">Loading...</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
